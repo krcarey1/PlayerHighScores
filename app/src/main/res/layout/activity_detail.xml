@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editAvatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editName"
+        android:layout_below="@+id/editName"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Avatar"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editAvatar"
+        android:layout_below="@+id/editAvatar"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Game Title"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/editGame"
+        android:layout_below="@+id/editGame"
+        android:layout_marginTop="33dp"
+        android:ems="10"
+        android:hint="Score"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editScore"
+        android:layout_below="@+id/editScore"
+        android:layout_marginTop="38dp"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_alignBaseline="@+id/buttonAdd"
+        android:layout_alignBottom="@+id/buttonAdd"
+        android:layout_alignEnd="@+id/editScore" />
+</RelativeLayout>
